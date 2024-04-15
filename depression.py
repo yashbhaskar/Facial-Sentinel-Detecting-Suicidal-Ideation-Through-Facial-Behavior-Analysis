@@ -8,14 +8,14 @@ from time import time
 
 # Function to send message using Twilio
 def send_message():
-    account_sid = 'AC3de1cfe73ae235d2141edc6f2281f8f8'
-    auth_token = 'b0b2079d9979e1875fb7bee3a6e5936b'
+    account_sid = ' ' # enter account sid
+    auth_token = ' '  # enter twilio auth token
     client = Client(account_sid, auth_token)
     
     message = client.messages.create(
         from_='whatsapp:+14155238886',
         body='I detected a depressed face',
-        to='whatsapp:+919022290396'
+        to='whatsapp:+ ' # enter whatsapp number
     )
     print(message.sid)
 
